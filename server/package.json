@@ -1,0 +1,17 @@
+{
+  "name": "agende-agora",
+  "version": "1.0.0",
+  "description": "App Agende Agora",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "node-schema-object": "^3.3.4",
+    "recursive-readdir": "^2.2.2",
+    "restify": "^8.5.1"
+  }
+}
