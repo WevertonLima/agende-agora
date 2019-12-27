@@ -1,11 +1,19 @@
 const restify = require('restify');
 const recursiveReaddir = require('recursive-readdir');
 const path = require('path');
+const mongoose = require('mongoose');
 
 const server = restify.createServer({
     name: 'APPAGENDEAGORA',
     version: '1.0.0'
 });
+
+mongoose.connect('mongodb+srv://rootagende:14CBOP11Gl1LnRAD@agende-kcxts.gcp.mongodb.net/test?retryWrites=true&w=majority',
+    {
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+    }
+);
 
 server.use(restify.plugins.acceptParser(server.acceptable));
 server.use(restify.plugins.queryParser());
