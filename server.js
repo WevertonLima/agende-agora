@@ -8,7 +8,7 @@ const server = restify.createServer({
     version: '1.0.0'
 });
 
-mongoose.connect('mongodb+srv://rootagende:14CBOP11Gl1LnRAD@agende-kcxts.gcp.mongodb.net/test?retryWrites=true&w=majority',
+mongoose.connect('mongodb+srv://rootagende:wbp8DEk3xQ8GisZq@agende-agora-1wv29.gcp.mongodb.net/agende-agora?retryWrites=true&w=majority',
     {
         useNewUrlParser: true,
         useUnifiedTopology: true

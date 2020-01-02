@@ -20,13 +20,6 @@ const UsuarioSchema = new mongoose.Schema({
         default: false,
     }
 },
-    {
-        timestamps: true,
-        toObject: { virtuals: true },
-        toJSON: { virtuals: true }
-    },
-    {
-        collection: 'pessoa'
-    })
+)
 
 module.exports = mongoose.model('Usuarios', UsuarioSchema);
